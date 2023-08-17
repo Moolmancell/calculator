@@ -7,7 +7,7 @@ body {
     margin: auto;
     box-shadow: 0px 0px 12px rgb(72,255,0), inset 0px 0px 12px rgb(72,255,0);
     border: 2px solid rgb(72,255,0) ;
-    border-radius: 20px;
+    border-radius: 10px;
 }
 
 #calculator {
@@ -43,5 +43,5 @@ body {
     background-color: black;
     box-shadow: 0px 0px 12px rgb(72,255,0), inset 0px 0px 12px rgb(72,255,0);
     border: 2px solid rgb(72,255,0);
-    border-radius: 20px;
+    border-radius: 10px;
 }
