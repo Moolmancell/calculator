@@ -19,10 +19,23 @@ body {
 }
 
 #frame {
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
     height: 250px;
     width: 350px;
     margin-top: 25px;
+    padding: 20px;
+    color: rgb(72,255,0);
+    justify-content: space-between;
 }
+
+#frame h1, #frame h2 {
+    margin: 0;
+    word-wrap: break-word;  
+    text-align: end;
+}
+
 
 #keys {
     height: 270px;
@@ -44,4 +57,9 @@ body {
     box-shadow: 0px 0px 12px rgb(72,255,0), inset 0px 0px 12px rgb(72,255,0);
     border: 2px solid rgb(72,255,0);
     border-radius: 10px;
+    transition: background-color 0.2s;
+}
+
+.key:hover {
+    background-color: rgb(72,255,0);
 }
