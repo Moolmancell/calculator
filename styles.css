@@ -34,8 +34,11 @@ body {
     margin: 0;
     word-wrap: break-word;  
     text-align: end;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* number of lines to show */
+    -webkit-box-orient: vertical;
 }
-
 
 #keys {
     height: 270px;
