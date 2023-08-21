@@ -4,7 +4,11 @@ const screen = document.querySelector('#frame h2');
 const screen1 = document.querySelector('#frame h1');
 const cancel = document.querySelector("div#keys .key.cancel")
 const back = document.querySelector("div#keys .key.back")
+<<<<<<< HEAD
 const equal = document.querySelector("div#keys .key.equal")
+=======
+
+>>>>>>> 5bf8dcdcd7233eedc7df17c9b002b7ce86b7e0aa
 
 let operationQueue = [""]
 
@@ -28,7 +32,11 @@ numberKeys.forEach(key => {
 });
 operatorKeys.forEach(key => {
     key.addEventListener("click", () => {
+<<<<<<< HEAD
         const operators = Array.from(operatorKeys).map(content => content.textContent); /* might use later*/
+=======
+        const operators = Array.from(operatorKeys).map(content => content.textContent);
+>>>>>>> 5bf8dcdcd7233eedc7df17c9b002b7ce86b7e0aa
         operators.push("")
         if (!operators.includes(operationQueue[operationQueue.length-1])){
             operationQueue.push(key.textContent, "")
@@ -40,6 +48,7 @@ operatorKeys.forEach(key => {
 
 cancel.addEventListener("click", () => {
     operationQueue = [""]
+<<<<<<< HEAD
     screen1.textContent = "0";
     screen.textContent = "";
 })
@@ -86,8 +95,21 @@ function displayvalue(array) {
     const stringValue = array.join(" ")
     screen1.textContent = "0";
     screen.textContent = stringValue;
+=======
+    displayvalueh1(operationQueue)
+    displayvalue(operationQueue)
+})
+
+function displayvalue(array) {
+    screen1.textContent = "0";
+    screen.textContent = array.join(" ");
+>>>>>>> 5bf8dcdcd7233eedc7df17c9b002b7ce86b7e0aa
 }
 
 function displayvalueh1(array){
     screen1.textContent = array[array.length-1]
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5bf8dcdcd7233eedc7df17c9b002b7ce86b7e0aa
