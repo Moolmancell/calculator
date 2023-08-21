@@ -60,18 +60,22 @@ equal.addEventListener("click", () => {
             if (operationQueue[i] === "x") {
                 const answer =  +operationQueue[i-1] * +operationQueue[i+1];
                 operationQueue.splice(i-1, 3, answer.toString())
+                break
             }
             else if (operationQueue[i] === "/") {
                 const answer =  +operationQueue[i-1] / +operationQueue[i+1];
                 operationQueue.splice(i-1, 3, answer.toString())
+                break
             }
             else if (operationQueue[i] === "+" && !operationQueue.includes("x") && !operationQueue.includes("/")) {
                 const answer =  +operationQueue[i-1] + +operationQueue[i+1];
                 operationQueue.splice(i-1, 3, answer.toString())
+                break
             }
             else if (operationQueue[i] === "-" && !operationQueue.includes("x") && !operationQueue.includes("/")) {
                 const answer =  +operationQueue[i-1] - +operationQueue[i+1];
                 operationQueue.splice(i-1, 3, answer.toString())
+                break
             }
             
         }
